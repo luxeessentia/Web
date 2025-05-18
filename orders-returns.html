@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orders & Returns – Luxe Essentials</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="public/favicon.ico" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <h1>Luxe Essentials</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="orders-returns.html" class="active">Orders & Returns</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-content">
+      <h2>Orders & Returns</h2>
+      <div class="cart-icon">
+        <a href="cart.html">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content orders-page">
+    <h3>Track Your Order</h3>
+    <p>Once your order ships, you’ll receive a tracking number via email. Enter your order number below to see its status:</p>
+    <form class="track-form" action="#" method="get">
+      <input type="text" placeholder="Order Number" required />
+      <button type="submit">Track Order</button>
+    </form>
+
+    <h3>Start a Return</h3>
+    <p>We accept returns within 7 days of delivery for unused items. To begin a return, please fill out the form below:</p>
+    <form class="return-form" action="#" method="post">
+      <label for="order-num">Order Number:</label>
+      <input type="text" id="order-num" name="orderNumber" required />
+
+      <label for="reason">Reason for Return:</label>
+      <select id="reason" name="reason" required>
+        <option value="">Select a reason</option>
+        <option value="damaged">Damaged item</option>
+        <option value="not-as-descr">Not as described</option>
+        <option value="wrong-item">Wrong item sent</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="details">Additional Details:</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <button type="submit">Submit Return Request</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>📦 FREE STANDARD SHIPPING ON U.S. ORDERS $50+ | FREE EXPRESS SHIPPING ON U.S. ORDERS $100+</p>
+    <div class="social-links">
+      <a href="https://instagram.com/luxeessentials" target="_blank">Instagram</a> |
+      <a href="https://tiktok.com/@luxeessentials" target="_blank">TikTok</a> |
+      <a href="https://threads.net/@luxeessentials" target="_blank">Threads</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
