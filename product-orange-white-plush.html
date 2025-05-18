@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orange & White Plush Bag – Luxe Essentials</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="public/favicon.ico" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <h1>Luxe Essentials</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="orders-returns.html">Orders & Returns</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-content">
+      <div class="product-title">
+        <h2>Orange & White Plush Bag</h2>
+        <p class="price">$60</p>
+      </div>
+      <div class="cart-icon">
+        <a href="cart.html">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content product-page">
+    <div class="product-gallery">
+      <img
+        id="main-image"
+        src="public/images/orange-white-plush-front.jpg"
+        alt="Orange & White Plush Bag - Front View"
+      />
+      <div class="thumbnail-row">
+        <img
+          src="public/images/orange-white-plush-front.jpg"
+          alt="Front View"
+          onclick="swapImage('public/images/orange-white-plush-front.jpg')"
+        />
+        <img
+          src="public/images/orange-white-plush-strap.jpg"
+          alt="Removable Strap View"
+          onclick="swapImage('public/images/orange-white-plush-strap.jpg')"
+        />
+        <img
+          src="public/images/orange-white-plush-inside.jpg"
+          alt="Inside Lining View"
+          onclick="swapImage('public/images/orange-white-plush-inside.jpg')"
+        />
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h3>Description</h3>
+      <ul>
+        <li>
+          ✅ <strong>Soft Plush Exterior</strong> – Made from chenille and fluffy
+          fleece yarn for a cozy and stylish look.
+        </li>
+        <li>
+          ✅ <strong>Sturdy Base</strong> – Constructed with plastic mesh canvas
+          for added durability and shape retention.
+        </li>
+        <li>
+          ✅ <strong>Convertible 47-Inch Chain Strap</strong> – Wear it as a
+          crossbody bag or double the strap for a chic shoulder bag look.
+        </li>
+        <li>
+          ✅ <strong>Gold-Tone Chain Detail</strong> – Interwoven plush fabric
+          with a gold-tone chain for an elegant and seamless design.
+        </li>
+        <li>
+          ✅ <strong>Spacious & Lined Interior</strong> – Lined with durable
+          fabric, perfect for carrying essentials like your phone, wallet,
+          keys, and makeup.
+        </li>
+        <li><strong>Size:</strong> 7.5" (L) x 2" (W) x 4.5" (H)</li>
+      </ul>
+
+      <div class="buy-buttons">
+        <!-- PayPal Buy Now Button -->
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_blank"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input
+            type="hidden"
+            name="hosted_button_id"
+            value="YOUR_PAYPAL_BUTTON_ID"
+          />
+          <button type="submit" class="btn-paypal">Buy with PayPal</button>
+        </form>
+
+        <!-- Visa/MC/Amex via Stripe (example) -->
+        <button
+          class="btn-stripe"
+          onclick="location.href='https://checkout.stripe.com/pay/YOUR_STRIPE_LINK';"
+        >
+          Pay with Card
+        </button>
+
+        <!-- Cash App -->
+        <button
+          class="btn-cashapp"
+          onclick="window.open('https://cash.app/$LuxeEssentials/60', '_blank')"
+        >
+          Pay with Cash App
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>📦 FREE STANDARD SHIPPING ON U.S. ORDERS $50+ | FREE EXPRESS SHIPPING ON U.S. ORDERS $100+</p>
+    <div class="social-links">
+      <a href="https://instagram.com/luxeessentials" target="_blank">Instagram</a> |
+      <a href="https://tiktok.com/@luxeessentials" target="_blank">TikTok</a> |
+      <a href="https://threads.net/@luxeessentials" target="_blank">Threads</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
